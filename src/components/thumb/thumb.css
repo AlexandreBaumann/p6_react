@@ -1,0 +1,15 @@
+
+.thumb{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5)), #FF6060;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .thumbTxt {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }

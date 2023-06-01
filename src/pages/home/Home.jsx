@@ -1,7 +1,6 @@
 import './Home.css';
-import Thumb from './components/thumb.js'
-
-const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7']; 
+import Thumb from '../../components/thumb/thumb'
+import items from '../../components/items'
 
 function Home() {
   return (
@@ -16,3 +15,4 @@ function Home() {
 }
 
 export default Home;
+

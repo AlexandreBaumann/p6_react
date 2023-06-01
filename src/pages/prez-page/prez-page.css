@@ -1,0 +1,60 @@
+.infoGen {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.leftInfoGen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftInfoGen h1 {
+    font-size: 36px;
+    margin: 0px;
+    font-weight: 500;
+    line-height: 64px;
+}
+.leftInfoGen h1 + p {
+    margin-top: 0px;
+  }
+
+.rightInfoGen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rightInfoGen .author {
+    display: flex;
+    align-items:center;
+}
+
+.rightInfoGen .autName {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    margin-right: 10px;
+}
+
+.rightInfoGen .author p {
+    font-size: 18px;
+    margin: 0px;
+}
+
+
+.rightInfoGen img {
+    background-color: #C4C4C4;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.rightInfoGen i {
+    font-size: 24px;
+
+}
+.rightInfoGen i:nth-child(4), .rightInfoGen i:nth-child(5){
+    color:#C4C4C4;
+}

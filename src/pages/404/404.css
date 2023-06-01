@@ -1,0 +1,21 @@
+#err404 h1 {
+    font-size: 288px;
+    margin: 0px;
+}
+
+#err404 {
+    color:#FF6060;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#errMess {
+    font-size:36px;
+    margin-bottom: auto;
+}
+
+#retour-accueil {
+    font-size: 18px;
+}

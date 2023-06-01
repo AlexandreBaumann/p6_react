@@ -2,4 +2,9 @@
     background-color: #FF6060;
     color: white;
     border-radius: 10px;
+    
+}
+
+.taglist {
+    display: flex;
 }
