@@ -1,72 +1,25 @@
+import { useParams } from 'react-router-dom';
+import logements from '../../mock/logements.json';
 import './prez-page.css';
-import TagList from '../../components/tag/tag';
 import Collapse from '../../components/collapse/collapse';
-import items from '../../components/items';
-//composant auteur
-//composant note
+import Carousel from '../../components/carousel/carousel';
+import InfoGen from '../../components/infogen/infogen';
 
 function PrezPage() {
-    const item = items[0];
-
-    return (
-        <div>
-          <div className='bannePrez'>
-
-          </div>
-          <div className="infoGen">
-            <div>
-              <h1>{item.name}</h1>
-              <div className="author">
-                <div className="autName">
-                    <p>{item.autFor}</p>
-                    <p>{item.autLast}</p>
-                </div>
-                <img></img>
-              </div>
-            </div>
-            <p className="subTitle">{item.loc}</p>
-            <div>
-              <TagList tags={item.tags} />
-              <div> 
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                </div>
-            </div>
+  const { id } = useParams();
+  const item = logements.find(logement => logement.id === id);
 
 
-            <div className='leftInfoGen'>
-                <h1>{item.name}</h1>
-                <p className="subTitle">{item.loc}</p>
-                <div className="tags">
-                  <TagList tags={item.tags} />
-                </div>
-            </div>
-            <div className='rightInfoGen'>
-              <div className="author">
-                <div className="autName">
-                    <p>{item.autFor}</p>
-                    <p>{item.autLast}</p>
-                </div>
-                <img></img>
-              </div>
-              <div> 
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-              </div>
-            </div>
-
-          </div>
-          <div className="descriptions">
-            <Collapse title="Description"/>
-            <Collapse title="Equipements"/>
-          </div>
-        </div>);
+  return (
+    <main>
+      <Carousel pictures={item.pictures}/> 
+      <InfoGen item= {item}/>
+      <div className="descriptions">
+        <Collapse title="Description" children={item.description}/>
+        <Collapse title="Equipements" children={item.equipments}/>
+      </div>
+    </main>
+  );
 }
 
 export default PrezPage;

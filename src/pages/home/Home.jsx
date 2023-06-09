@@ -1,18 +1,19 @@
 import './Home.css';
-import Thumb from '../../components/thumb/thumb'
-import items from '../../components/items'
+import Card from '../../components/card/card'
+import logements from '../../mock/logements.json'
 
 function Home() {
   return (
-      <div>
-        <h1 id='bannerHome'>Chez vous, partout et ailleurs</h1>
+      <main>
+        <div id='bannerHome'>
+          <h1>Chez vous, partout et ailleurs</h1>
+        </div>
         <div id="loop">
-          {items.map((item, index) => (
-          <Thumb key={index} item={item} />
+          {logements.map((item) => (
+          <Card key={item.id} item={item} />
           ))}            
         </div>
-      </div>);
+      </main>);
 }
 
 export default Home;
-

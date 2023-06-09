@@ -2,9 +2,21 @@
     background-color: #FF6060;
     color: white;
     border-radius: 10px;
-    
+    padding: 3px 30px 3px 30px;
+    font-size: 14px;
 }
 
 .taglist {
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap:10px;
+}
+
+@media (max-width: 599px) {
+    .tag {
+        border-radius: 10px;
+        padding: 3px 30px 3px 30px;
+        font-size: 10px;
+    }
 }

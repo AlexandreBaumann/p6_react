@@ -1,7 +1,8 @@
 
 const items = [
     { 
-      name: "Cozy loft on the canal saint martin",
+      id: "c67ab8a7",
+      name: "Cozy loft on the Canal Saint-Martin",
       loc: "Paris, Ile-de-France",
       autFor: "Alexandre",
       autLast: "Dumas",
@@ -11,6 +12,7 @@ const items = [
       équipements: ['Climatisation', 'Wi-Fi', 'Cuisine', 'Espace de travail', 'Fer à repasser', 'Sèche-cheveux', 'Cintres']
     },
     { 
+      id: "b9123946",
       name: "Item 2",
       loc: "Paris, Ile-de-France",
       autFor: "Alexandre",

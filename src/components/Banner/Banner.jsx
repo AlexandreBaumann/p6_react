@@ -1,11 +1,7 @@
-import '../styles/banner.css'
+import './banner.css'
 
-const thumbURL =""
-const thumbAlt =""
-
-
-const Banner = ()  => {
-    return <img className="banner" src={thumbURL} alt={thumbAlt} />;
-  }; 
+const Banner = ({bannerURL, bannerAlt})  => {
+    return <img className="banner" src={bannerURL} alt={bannerAlt} />;
+}; 
   
-  export default Banner;
+export default Banner;
