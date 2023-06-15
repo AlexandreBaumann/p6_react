@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 130px;
+}
+
+@media (max-width: 599px) {
+  header {
+    height: 70px;
+  }
+}
+.logoheader {
+  height: 63px;
+}
+
+@media (max-width: 599px) {
+  .logo {
+      width: 135px;
+      height: 50px;
+  }
+}

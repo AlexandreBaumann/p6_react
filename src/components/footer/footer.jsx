@@ -1,12 +1,11 @@
-import './footer.css';
-import Logo from '../logo/logo'
+import "./footer.scss";
+import LogoFooter from "../../img/LogoFooter.JPG";
 
 const Footer = ({ item }) => {
   return (
     <footer>
-      <Logo />
+      <img src={LogoFooter} className="logofooter" alt="Logo" />
       <p> © 2020 Kasa. All rights reserved</p>
-
     </footer>
   );
 };

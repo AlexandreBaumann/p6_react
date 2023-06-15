@@ -1,6 +1,6 @@
 
 import TagList from '../../components/tag/tag';
-import './infogen.css';
+import './infogen.scss';
 
 
 function InfoGen({item}) {

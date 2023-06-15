@@ -1,16 +1,19 @@
-import './navigation.css';
+import "./navigation.scss";
+import { NavLink } from "react-router-dom";
 
-function Navigation () {
+function Navigation() {
   return (
-      <nav>
-        <ul>
-          <li><a href={'/'}>Accueil</a></li>
-          <li> <a href={'/a-propos/'}>A propos </a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul>
+        <li>
+          <NavLink to="/">Accueil</NavLink>
+        </li>
+        <li>
+          <NavLink to="/a-propos/">A propos</NavLink>
+        </li>
+      </ul>
+    </nav>
   );
-};
+}
 
 export default Navigation;
-
-

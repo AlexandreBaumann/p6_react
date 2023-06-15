@@ -1,4 +1,4 @@
-import './Home.css';
+import './Home.scss';
 import Card from '../../components/card/card'
 import logements from '../../mock/logements.json'
 

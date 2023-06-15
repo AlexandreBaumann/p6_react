@@ -1,4 +1,4 @@
-import './collapse.css'
+import './collapse.scss'
 import React, { useState } from "react";
 
 const Collapse = ({ title, children }) => {

@@ -1,10 +1,12 @@
-.carousel {
+@import '../../variables' ;
+
+.galerie {
   position: relative;
   width: 100%;
   margin-bottom: 30px;
 }
 
-.carousel img {
+.galerie img {
   object-fit: cover;
   width: 100%;
   height: 400px;
@@ -17,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  color: white;
+  color: $secundary-color;
   font-size: 80px;
 }
 
@@ -28,32 +30,32 @@
 .controls .fa-chevron-right {
   margin-right: 30px;
 }
-.carousel-num {
+.galerie-num {
   position: absolute;
   bottom: 10px;
   text-align: center;
   font-size: 18px;
-  color: white;
+  color: $secundary-color;
   width: 100%;
 }
 
-.carousel i {
+.galerie i {
   transition: transform 0.3s ease, box-shadow 0s ease;
 }
 
-.carousel i:hover {
+.galerie i:hover {
   transform: scale(1.2);
 }
 
-.carousel i:active {
+.galerie i:active {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 599px) {
-  .carousel {
+  .galerie {
     margin-bottom: 10px;
   }
-  .carousel img {
+  .galerie img {
     height: 250px;
     border-radius: 10px;
   }
@@ -66,10 +68,10 @@
   .controls .fa-chevron-right {
     margin-right: 0px;
   }
-  .carousel-num {
+  .galerie-num {
     display: none;
   }
-  .carousel i:hover {
+  .galerie i:hover {
     transform: scale(0.6);
   }
 }

@@ -1,3 +1,4 @@
+@import '../../variables' ;
 
 
 #bannerHome {
@@ -6,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
   
   }
   #bannerHome::before {
@@ -21,7 +23,7 @@
     border-radius: 25px;
   }
   #bannerHome h1{
-  color: white;
+  color: $secundary-color;
   font-size: 48px;
   font-weight: 500;
 
@@ -49,17 +51,17 @@
   
   #loop {
     border-radius: 25px;
-    background-color: #F6F6F6;
+    background-color: $light-grey;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    color:#F6F6F6;
+    color:$light-grey;
     padding: 50px;
   }
 
   @media (max-width: 599px) {
     #loop{
-      background-color: white;
+      background-color: $secundary-color;
       padding: 20px 0px 20px 0px ;
       justify-content: center;
     }

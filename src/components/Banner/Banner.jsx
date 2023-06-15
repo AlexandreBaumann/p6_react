@@ -1,4 +1,4 @@
-import './banner.css'
+import './banner.scss'
 
 const Banner = ({bannerURL, bannerAlt})  => {
     return <img className="banner" src={bannerURL} alt={bannerAlt} />;

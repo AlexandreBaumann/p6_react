@@ -1,15 +1,14 @@
-import './header.css';
-import Logo from '../logo/logo'
-import Navigation from '../../components/navigation/navigation';
+import "./header.scss";
+import Navigation from "../../components/navigation/navigation";
+import LogoHeader from "../../img/LogoHeader.JPG";
 
-function Header () {
+function Header() {
   return (
     <header>
-      <Logo />
+      <img src={LogoHeader} className="logoheader" alt="Logo" />
       <Navigation />
-
     </header>
   );
-};
+}
 
 export default Header;

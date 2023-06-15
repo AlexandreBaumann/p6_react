@@ -1,6 +1,8 @@
+@import '../../variables' ;
+
 .tag {
-    background-color: #FF6060;
-    color: white;
+    background-color: $primary-color;
+    color:$secundary-color;
     border-radius: 10px;
     padding: 3px 30px 3px 30px;
     font-size: 14px;
