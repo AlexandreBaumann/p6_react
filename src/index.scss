@@ -1,23 +1,22 @@
-@import 'variables' ;
+@import 'variables';
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat'; 
+  font-family: 'Montserrat';
   color: $primary-color;
 }
 
-a{
+a {
   color: $primary-color;
   text-decoration: none;
 }
 
 header, main {
-  
   margin-right: 5%;
   margin-left: 5%;
 }

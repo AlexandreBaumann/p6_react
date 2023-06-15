@@ -1,28 +1,29 @@
+@import '../../variables';
 
 footer {
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    font-size: 24px;
-    justify-content:center;
-    padding: 30px;
-    row-gap: 30px;
-  }
+  background-color: black;
+  color: $secundary-color;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-size: 24px;
+  justify-content:center;
+  padding: 30px;
+  row-gap: 30px;
+
   .logofooter {
     height: 40px;
     margin-top: 20px;
   }
 
   @media (max-width: 599px) {
-    footer {
-      font-size: 12px;
-      row-gap: 10px;
-    } 
-    footer p {
+    font-size: 12px;
+    row-gap: 10px;
+    
+    p {
       max-width: 130px;
       text-align: center;
     }
   }
+}

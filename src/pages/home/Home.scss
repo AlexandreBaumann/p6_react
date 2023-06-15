@@ -1,16 +1,20 @@
-@import '../../variables' ;
-
+@import '../../variables';
 
 #bannerHome {
-    position: relative; 
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-  
+  position: relative; 
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @media (max-width: 599px) {
+    height: 100px;
+    margin-bottom: 0px;
+
   }
-  #bannerHome::before {
+
+  &::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -21,51 +25,41 @@
     filter: brightness(0.7);  
     z-index: -1; 
     border-radius: 25px;
-  }
-  #bannerHome h1{
-  color: $secundary-color;
-  font-size: 48px;
-  font-weight: 500;
 
-  }
-  @media (max-width: 599px) {
-    #bannerHome {
-        height: 100px;
-
-    } 
-    #bannerHome::before {
+    @media (max-width: 599px) {
       border-radius: 10px;
-
     }
-      #bannerHome h1{
+  }
+
+  h1 {
+    color: $secundary-color;
+    font-size: 48px;
+    font-weight: 500;
+
+    @media (max-width: 599px) {
       font-size: 24px;
       padding-left: 20px;
       padding-right: 30px;
-        
-      }
+    }
   }
-  /* ---------------- LOOP ------------------*/
-  /* ---------------- LOOP ------------------*/
-  /* ---------------- LOOP ------------------*/
-  /* ---------------- LOOP ------------------*/
-  
-  #loop {
-    border-radius: 25px;
-    background-color: $light-grey;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color:$light-grey;
-    padding: 50px;
-  }
+}
+
+#loop {
+  border-radius: 25px;
+  background-color: $light-grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: $light-grey;
+  padding: 50px;
 
   @media (max-width: 599px) {
-    #loop{
-      background-color: $secundary-color;
-      padding: 20px 0px 20px 0px ;
-      justify-content: center;
-    }
-    #loop a {
+    background-color: $secundary-color;
+    padding: 20px 0px 20px 0px;
+    justify-content: center;
+
+    a {
       width: 100%;
     }
   }
+}

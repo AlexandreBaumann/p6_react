@@ -5,7 +5,9 @@ import LogoHeader from "../../img/LogoHeader.JPG";
 function Header() {
   return (
     <header>
-      <img src={LogoHeader} className="logoheader" alt="Logo" />
+      <a href="/">
+        <img src={LogoHeader} className="logoheader" alt="Logo" />
+      </a>
       <Navigation />
     </header>
   );

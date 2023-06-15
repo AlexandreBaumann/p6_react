@@ -1,3 +1,6 @@
+@import '../../variables' ;
+
+
 .collapse-component {
   flex: 1;
   margin-bottom: 20px;
@@ -7,86 +10,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ff6060;
-  color: white;
-  padding: 13px 20px 13px 20px;
+  background-color: $primary-color;
+  color: $secundary-color;
+  padding: 13px 20px;
   border-radius: 10px;
   font-size: 18px;
   font-weight: 500;
-  margin: 0px;
+  margin: 0;
   position: relative;
+
+  @media (max-width: 599px) {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
 }
 
 .collapse-content {
+  margin-top: -10px;
   max-height: 0;
   overflow: hidden;
-  position: relative;
   transition: max-height 0.5s ease-in-out;
-}
-
-.collapse-content > * {
-  background-color: #f6f6f6;
-  border-radius: 10px;
-  padding: 20px 20px 10px 20px;
-  line-height: 26px;
-  font-size: 18px;
-}
-
-.collapse-content li {
-  list-style-type: none;
-}
-
-.collapse-content.open {
-  max-height: 500px; /* This value should be greater than the height of your content */
-}
-
-@media (max-width: 599px) {
-  .collapse-header {
-    font-size: 13px;
-    padding: 7px 10px 7px 10px;
-  }
-  .collapse-content {
-    font-size: 12px;
-    padding: 30px 10px 10px 10px;
-    line-height: 18px;
-  }
-}
-
-/*@keyframes slideDown {
-  0% { height: 0; }
-  100% { height: auto; }
-}
-
-.collapse-component {
-    flex: 1;
-    margin-bottom: 20px;
-}
-
-.collapse-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FF6060;
-    color: white;
-    padding: 13px 20px 13px 20px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0px;
-    position:relative;
-    z-index: 2;
-}
-
-.collapse-content {
-    background-color: #F6F6F6;
-    border-radius: 10px;
-    padding: 20px 20px 10px 20px;
+  
+  & > * {
+    background-color: $light-grey;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px 20px 10px;
     line-height: 26px;
     font-size: 18px;
-    position:relative;
-    top:-20px;
-    z-index: 1;
-    overflow: hidden; 
-    animation: slideDown 0.5s ease-out; 
+    @media (max-width: 599px) {
+      font-size: 12px;
+      line-height: 18px;}
+  }
+
+  & li {
+    list-style-type: none;
+  }
+
+  &.open {
+    max-height: 500px; /* Valeur maximale du contenu ouvert */
+  }
+
 }
-*/

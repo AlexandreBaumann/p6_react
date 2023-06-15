@@ -1,24 +1,22 @@
-@import '../../variables' ;
-
-.tag {
-    background-color: $primary-color;
-    color:$secundary-color;
-    border-radius: 10px;
-    padding: 3px 30px 3px 30px;
-    font-size: 14px;
-}
+@import '../../variables';
 
 .taglist {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    gap:10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
-@media (max-width: 599px) {
-    .tag {
-        border-radius: 10px;
-        padding: 3px 30px 3px 30px;
-        font-size: 10px;
-    }
+.tag {
+  background-color: $primary-color;
+  color: $secundary-color;
+  border-radius: 10px;
+  padding: 3px 30px 3px 30px;
+  font-size: 14px;
+
+  @media (max-width: 599px) {
+    font-size: 10px;
+  }
 }
+
