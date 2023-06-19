@@ -51,12 +51,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   color: $light-grey;
+  gap: 40px;
   padding: 50px;
 
   @media (max-width: 599px) {
     background-color: $secundary-color;
     padding: 20px 0px 20px 0px;
     justify-content: center;
+    gap: 20px;
 
     a {
       width: 100%;

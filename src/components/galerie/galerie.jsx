@@ -1,10 +1,6 @@
 import "./galerie.scss";
 import React, { useState } from "react";
 
-// Affiner la présentation
-// Rajouter une vérification pour empecher le cas de figure http://localhost:3000/fiche-produit/cb02
-//responsive
-
 function Galerie({ pictures }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -22,12 +18,7 @@ function Galerie({ pictures }) {
     return (
       <div className="galerie">
         {pictures.map((picture, index) => (
-          <img
-            key={index}
-            src={picture}
-            alt="galerie"
-            style={{ display: index === currentImageIndex ? "block" : "none" }}
-          />
+          <img key={index} src={picture} alt="galerie" />
         ))}
       </div>
     );
