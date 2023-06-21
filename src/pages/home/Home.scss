@@ -35,11 +35,20 @@
     color: $secundary-color;
     font-size: 48px;
     font-weight: 500;
+    
+    @media (max-width: 800px) {
+      font-size: 36px;
+
+    }
 
     @media (max-width: 599px) {
       font-size: 24px;
       padding-left: 20px;
-      padding-right: 30px;
+      padding-right: 30%;
+    }
+    @media (max-width: 360px) {
+      font-size: 18px;
+
     }
   }
 }
